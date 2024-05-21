@@ -1,0 +1,61 @@
+'''
+
+1) Obtener todos los ingredientes:
+
+Método: GET
+URL: http://localhost:5000/ingredientes
+
+
+2) Agregar un nuevo ingrediente:
+
+Método: POST
+URL: http://localhost:5000/ingredientes
+Cuerpo (JSON):
+
+{
+    "nombre": "ajo",
+    "calorias": 10,
+    "tipo": "vegetal",
+    "cantidad": "2 unidades"
+}
+
+
+3) Eliminar un ingrediente:
+
+Método: DELETE
+URL: http://localhost:5000/ingredientes/ajo
+
+
+4) Obtener todas las recetas:
+
+Método: GET
+URL: http://localhost:5000/recetas
+
+
+5) Agregar una nueva receta:
+
+Método: POST
+URL: http://localhost:5000/recetas
+Cuerpo (JSON):
+
+{
+    "nombre": "Pollo a la parrilla",
+    "ingredientes": ["pollo", "papa", "cebolla"],
+    "dificultad": "fácil",
+    "calorias": 350,
+    "tiempo_coccion": 45
+}
+
+
+6) Eliminar una receta:
+
+Método: DELETE
+URL: http://localhost:5000/recetas/Pollo%20a%20la%20parrilla
+
+
+7) Obtener ingredientes faltantes para una receta:
+
+Método: GET
+URL: http://localhost:5000/recetas/Pollo%20a%20la%20parrilla/ingredientes_faltantes
+
+'''
